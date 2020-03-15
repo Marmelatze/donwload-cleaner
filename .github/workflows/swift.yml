@@ -16,7 +16,7 @@ jobs:
     - name: Build
       run: xcodebuild
     - name: github-action-publish-binaries
-      uses: skx/github-action-publish-binaries@release-1.3
+      uses: yakuhzi/action-release@v1
       with:
-        # The pattern of files to upload
-        args: build/Release/download-cleaner
+        file: build/Release/download-cleaner
+        
